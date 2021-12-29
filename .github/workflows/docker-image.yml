@@ -15,4 +15,4 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Push the Docker image
-      run: docker push . --file Dockerfile --tag raspi-landing-page:$(date +%s)
+      run: docker push . --tag raspi-landing-page:$(date +%s)
