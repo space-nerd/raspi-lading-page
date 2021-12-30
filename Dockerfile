@@ -10,4 +10,4 @@ RUN npm run build
 EXPOSE 3000
 
 # Running the app
-CMD [ "npx", "next", "start" ]
+CMD [ "yarn", "start" ]
