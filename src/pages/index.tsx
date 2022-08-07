@@ -5,7 +5,7 @@ import { DarkModeSwitch } from "../components/DarkModeSwitch";
 const Index = () => (
   <Container height="100vh">
     <DarkModeSwitch />
-    <Hero />
+    <Hero title={""} subTitle={""} />
   </Container>
 );
 

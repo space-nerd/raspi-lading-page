@@ -1,13 +1,7 @@
-FROM node:16
-WORKDIR /usr/src/app
+FROM node:alpine
 
-COPY . ./
+WORKDIR /usr/app
+COPY ./ /usr/app
+RUN npm install
 
-# building the app
-RUN npm i
-RUN npm run build
-
-EXPOSE 3000
-
-# Running the app
-CMD [ "yarn", "start" ]
+CMD ["npm", "dev"]
